@@ -1,6 +1,7 @@
-import Image from "next/image";
-import { testDatabaseConnection } from "../actions";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
+
+import { testDatabaseConnection } from '../actions';
 
 export default async function Home() {
   const isConnected = await testDatabaseConnection();
@@ -19,7 +20,7 @@ export default async function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{" "}
+            By{' '}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -42,7 +43,7 @@ export default async function Home() {
             height={37}
             priority
           />
-          {" + "}
+          {' + '}
           <Image
             className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] saturate-0 brightness-0 dark:saturate-100 dark:brightness-100"
             src="/mongodb.svg"
@@ -58,7 +59,7 @@ export default async function Home() {
           </h2>
         ) : (
           <h2 className="text-lg text-red-500">
-            You are NOT connected to MongoDB. Check the <code>README.md</code>{" "}
+            You are NOT connected to MongoDB. Check the <code>README.md</code>{' '}
             for instructions.
           </h2>
         )}
@@ -81,13 +82,13 @@ export default async function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
+          <h2 className={'mb-3 text-2xl font-semibold'}>
+            Docs{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+          <p className={'m-0 max-w-[30ch] text-sm opacity-50'}>
             Find in-depth information about Next.js features and API.
           </p>
         </a>
@@ -98,13 +99,13 @@ export default async function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
+          <h2 className={'mb-3 text-2xl font-semibold'}>
+            Learn{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+          <p className={'m-0 max-w-[30ch] text-sm opacity-50'}>
             Learn about Next.js in an interactive course with&nbsp;quizzes!
           </p>
         </a>
@@ -115,13 +116,13 @@ export default async function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
+          <h2 className={'mb-3 text-2xl font-semibold'}>
+            Templates{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+          <p className={'m-0 max-w-[30ch] text-sm opacity-50'}>
             Explore starter templates for Next.js + MongoDB.
           </p>
         </a>
@@ -132,13 +133,13 @@ export default async function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
+          <h2 className={'mb-3 text-2xl font-semibold'}>
+            Deploy{' '}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
           </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+          <p className={'m-0 max-w-[30ch] text-sm opacity-50'}>
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
